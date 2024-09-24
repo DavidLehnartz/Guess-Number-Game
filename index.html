@@ -6,34 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess Number Game</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+
 </head>
 
-<body>
-    <header class="header-wrapper">
-        <h3>My Guess The Number Game</h3>
+<body onload="init()">
+    <header class="header-wrapper div">
+        <span>My Guess The Number Game</span>
     </header>
     <main>
-        <section class="content-wrapper">
+        <section class="content-wrapper div">
             <div class="headline">
                 <h1>Guess The Number And Have Fun</h1>
                 <div class="seperator"></div>
             </div>
-            <div>
-                <h2>$ Du hast Gewonnen</h2> <!-- logik -->
+            <div class="rules">
+                <h3>Rules:</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, pariatur facilis dolor atque modi
+                dolorem distinctio, nam fuga consequatur quas, accusantium fugit ducimus ex saepe eaque alias voluptates
+                hic consequuntur.
             </div>
-            <form action=""> <!-- logik -->
-                <input type="number" min="0" placeholder="Put your number in here...">
+            <div>
+                <h2 id="result">$ Guess The Number</h2> <!-- logik -->
+            </div>
+            <form onsubmit=" showResult(); return false;"> <!-- logik -->
+                <input id="input_number" type="number" min="0" required placeholder="Good luck...">
                 <button>Try Again</button>
             </form>
             <div class="tries">
-                <p>Tries: $</p> <!-- logik -->
+                <p id="tries">Tries: 0</p> <!-- logik -->
             </div>
         </section>
     </main>
-    <footer>
-        <h3>yüüüüüüüah </h3>
+    <footer class="div">
+        <span>yüüüüüüüah</span>
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
