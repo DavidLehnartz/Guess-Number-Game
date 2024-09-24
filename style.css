@@ -15,7 +15,7 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1;
-  
+
     padding: 16px 0px;
 }
 
@@ -26,11 +26,13 @@ h1 {
 }
 
 
-h2 {}
+h2 {
+    color: aliceblue;
+}
 
 
 h3 {
-    margin: 0px;
+    margin: 16px;
     color: rgb(0, 0, 0);
 }
 
@@ -43,15 +45,63 @@ h3 {
     width: 100%;
     max-width: 1920px;
     height: 60px;
-    padding: 16px;
+    /* padding: 16px; */
+}
+
+
+.content-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 16px;
 }
 
 
 .headline {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
+
+
+.seperator {
+    display: flex;
+    justify-content: center;
+    height: 1px;
+    box-shadow: 0px 4px 0px whitesmoke;
+    width: 70%;
+    margin-bottom: 32px;
+}
+
+
+input{
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+button{
+    padding: 8px 32px;
+    background-color: #f6000085;
+    color: rgb(10, 14, 91);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+.tries{
+    color: aliceblue;
+}
+
+
+
+
+
+
 
 
 footer {
@@ -63,5 +113,5 @@ footer {
     height: 60px;
     background-color: #f6000085;
     margin: 0px auto;
-    padding: 16px;
+    /*  padding: 16px; */
 }
